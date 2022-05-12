@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300 &family= Rádio+Canadá & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor5);
+    color: var(--cor4);
+}
+a, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --cor1: #2D439C;
+    --cor2: #3854C2;
+    --cor3: #4566EB;
+    --cor4: rgb(255, 255, 255);
+    --corSecund: #E0D54B;
+
+    --cor5: #0c123a;
+
+    --fontTitulo: 'Poppins', sans-serif;
+    --fontText: 'Radio Canada', sans-serif;
+
+    --header-size: 3rem;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .800rem;
+    --smaller-font-size: .75rem;
+
+    --mb-0-5: .5rem;
+    --mb-1-0: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2-0: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3-0: 3rem;
+
+    --zIndex-10: 10;
+    --zIndex-100: 100;
+    --zIndex-1000: 1000;
+}
+
+/*====================Responsive btn=================*/
+.responsive-btn{
+    display: none;
+    width: 40px;
+    border-bottom: 3px var(--cor4) solid;
+}
+.responsive-btn::after, .responsive-btn::before{
+    content: '';
+    display: block;
+    width: 40px;
+    border-bottom: 3px var(--cor4) solid;
+    margin-bottom: 7px;
+}
+/*====================Header=================*/
+
+.header-img{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(.2);
+    z-index: -1;
+}
+.autor-img-fundo__header{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: var(--mb-2-0);
+}
+.header{
+    z-index: 1;
+}
+.contact-me{
+    border: 2px var(--cor2) solid;
+    border-radius: 5px;
+}
+.cabecalho-global{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fontTitulo);
+    padding: var(--mb-1-5);
+}
+.cabecalho-logotipo{
+    width: 200px;
+}
+.cabecalho-principal-nav-items{
+    display: flex;
+}
+.cabecalho-principal-nav-items-li{
+    padding: var(--mb-0-5);
+}
+.cabecalho-principal-nav-items-li a {
+    color: var(--cor4);
+    padding: var(--mb-1-0);
+    font-size: var(--h3-font-size);
+}
+#contactMe{
+    color: var(--cor2);
+    border: 2px var(--cor2) solid;
+    border-radius: 5px;
+    padding: var(--mb-1-0);
+}
+.cabecalho-principal-nav-items-li:not(:last-child){
+    margin-right: var(--mb-1-0);
+}
+.section-intro{
+    margin-top: var(--mb-3-0);
+    font-family: var(--fontText);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home{
+    border-bottom: 3px var(--cor1) solid;
+}
+
+/*=========================================Container main section-intro=============================*/
+.titulo{
+    font-family: var(--fontTitulo);
+}
+.section-about-img{
+    object-fit: contain;
+    border-radius: 5px;
+}
+.section-intro-h2{
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.container-main{
+    margin-top: calc(50vh + .4rem);
+}
+.container-about{
+    margin-left: var(--mb-3-0);
+    padding: .5rem;
+    color: rgb(223, 215, 215);
+}
+.section-about-header{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.section-about-intro{
+    color: var(--corSecund);
+    font-weight: bold;
+    padding: 1rem;
+    border-bottom: 2px var(--cor1) solid;
+}
+.section-about-h2{
+    color: white;
+    margin-top: 2rem;
+}
+.section-about-h2::before{
+    content: '';
+    position: relative;
+    top: 2.5rem;
+    width: 70px;
+    display: block;
+    border-bottom: 3px var(--corSecund) solid;
+
+}
+.infomation-personal{
+    padding: .5rem;
+    border: 2px var(--corSecund) solid;
+}
+.infomation-personal-list{
+    margin-top: var(--mb-1-0);
+    display: flex;
+    justify-content: space-around;
+}
+.information-personal-list-span{
+    color: white;
+    font-weight: bold;
+}
+.infomation-personal-CV{
+    background-color: var(--corSecund);
+    font-family: var(--fontText);
+    border-radius: 5px;
+    border: none;
+    width: 8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: .4rem;
+    color: rgb(0, 0, 0);
+}
+
+/*========================================cards work=================================*/
+.cards-work-global{
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 770px){
+    .responsive-btn{
+        display: block;
+        z-index: var(--zIndex-1000);
+    }
+    .cabecalho-principal-nav-items{
+        margin-top: 8rem;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        
+    }
+    .cabecalho-principal-nav-items-li{
+        margin-top: 3rem;
+    }
+    .contact-me{
+        margin-right: var(--mb-2-0);
+        margin-top: var(--mb-1-5);
+    }
+    .cabecalho-principal-nav-items-li a{
+        margin-right: var(--mb-1-0);
+        font-size: var(--h1-font-size);
+    }
+    
+    .cabecalho-principal-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 0;
+        width: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        transition: .6s;
+        z-index: var(--zIndex-100);
+        background-color: black;
+    }
+    #menuHeader.active{
+        visibility: visible;
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1002px){
+    .section-about-header{
+        flex-wrap: wrap-reverse;
+    }
+}
