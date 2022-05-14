@@ -66,7 +66,7 @@ a, li{
 .header-img{
     position: absolute;
     top: 0;
-    height: 100vh;
+    height: 97vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,6 +127,9 @@ a, li{
 #home{
     border-bottom: 3px var(--cor1) solid;
 }
+.icon-baixo{
+    position: absolute;
+}
 
 /*=========================================Container main section-intro=============================*/
 .titulo{
@@ -152,7 +155,7 @@ a, li{
 .section-about-header{
     display: flex;
     justify-content: space-around;
-    
+    margin-top: -10rem;
 }
 .section-about-intro{
     color: var(--corSecund);
@@ -200,10 +203,61 @@ a, li{
 
 /*========================================cards work=================================*/
 .cards-work-global{
+    width: 100%;
     margin-top: 6rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(22, 24, 36);
+    height: auto;
+}
+.cards{
+    display: flex;
+    width: 55rem;
+}
+.cards-work{
+    width: 23rem;
+    height: 16rem;
+    margin: 1.3rem .4rem;
+    border: 2px var(--corSecund) solid;
+}
+.header-card-work{
+    margin-left: -33rem;
+}
+.cards-section-two{
+    margin-top: 5rem;
+}
+.content-card{
+    padding: 2rem;
+}
+.icons-card{
+    font-size: 2rem;
+    padding: .3rem;
+}
+.gradient-titlle {
+    font-family: var(--fontTitulo);
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--cor1), var(--corSecund), var(--cor2) );
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+/*=====================================modal-cards======================*/
+.modal-cards-about-me{
+    background-color: #0c123a;
+}
+.btn-modal-cards{
+    border: 2px var(--cor1) solid;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 865px){
     .responsive-btn{
         display: block;
         z-index: var(--zIndex-1000);
@@ -244,6 +298,18 @@ a, li{
         visibility: visible;
         height: 100%;
         width: 100%;
+    }
+}
+@media screen and (max-width: 920px){
+    .cards{
+        display: block;
+        width: 25rem;
+    }
+    .header-card-work{
+        margin-left: 0;
+    }
+    .cards-section-two{
+        margin-top: 1rem;
     }
 }
 @media screen and (max-width: 1002px){
