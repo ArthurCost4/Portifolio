@@ -21,7 +21,7 @@ a, li{
     --cor4: rgb(255, 255, 255);
     --corSecund: #E0D54B;
 
-    --cor5: #0c123a;
+    --cor5: #06091f;
 
     --fontTitulo: 'Poppins', sans-serif;
     --fontText: 'Radio Canada', sans-serif;
@@ -256,7 +256,120 @@ a, li{
     color: white;
     font-weight: bold;
 }
+.modal-header .btn-close{
+    background-color: rgb(255, 255, 255);
+}
 
+/*=====================================content projects======================*/
+.projects-header{
+    margin: 3rem 0;
+    text-align: center;
+}
+.section-projects{
+    display: flex;
+    align-items: flex-start;
+}
+.content-projects{
+    width: auto;
+}
+/*=====================================SLIDER projects======================*/
+
+.slider-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider{
+    width: 23rem;
+    height: 32rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 30rem;
+    height: 35rem;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 100%;
+    transition: 2s;
+}
+.slide img{
+    height: 500px;
+    image-rendering: auto;
+}
+.nav-manual{
+    position: absolute;
+    width: 24rem;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid var(--cor2);
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 35px;
+}
+.manual-btn:hover{
+    background-color: var(--cor2);
+}
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+#radio3:checked ~ .first{
+    margin-left: -179%;
+}
+#radio4:checked ~ .first{
+    margin-left: -257%;
+}
+#radio5:checked ~ .first{
+    margin-left: -395%;
+}
+
+
+/*=====================================RESPONSIVIDADE======================*/
+@media screen and (max-width:800px) {
+    .nav-manual{
+        width: 21rem;
+        margin-top: 1rem;
+    }
+    .slides {
+        width: 30rem;
+        height: 31rem;
+    }
+    .slider {
+        width: 23rem;
+        height: 30rem;
+    }
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -100%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -180%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -257%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -400%;
+    }
+}
 @media screen and (max-width: 865px){
     .responsive-btn{
         display: block;
@@ -315,5 +428,9 @@ a, li{
 @media screen and (max-width: 1002px){
     .section-about-header{
         flex-wrap: wrap-reverse;
+    }
+    .section-projects {
+        align-items: center;
+        flex-direction: column;
     }
 }

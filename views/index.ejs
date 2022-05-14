@@ -1,214 +1,296 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/c9e4967131.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/fixo.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-    <script src="../js/fixo.js" defer></script>
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Arthur portfolio's</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c9e4967131.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/fixo.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+    defer></script>
+  <script src="../js/fixo.js" defer></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Arthur portfolio's</title>
 </head>
+
 <body>
-    <div class="header">
-        <img src="../img/fundoMontain.jpg" class="header-img" alt="">
-        <header class="cabecalho-global">
-            <img src="../img/logo.png" class="cabecalho-logotipo"></img>
-            <div class="cabecalho-principal">
-                <nav class="cabecalho-principal-nav" id="menuHeader">
-                    <ul class="cabecalho-principal-nav-items">
-                        <li class="cabecalho-principal-nav-items-li"><a id="home" href="#">HOME</a></li>
-                        <li class="cabecalho-principal-nav-items-li"><a href="#">About me</a></li>
-                        <li class="cabecalho-principal-nav-items-li"><a href="#">Projects</a></li>
-                        <li class="cabecalho-principal-nav-items-li"><a id="contactMe" href="#">Contact me</a></li>
-                    </ul>
-                </nav>
+  <div class="header">
+    <img src="../img/fundoMontain.jpg" class="header-img" alt="">
+    <header class="cabecalho-global">
+      <img src="../img/logo.png" class="cabecalho-logotipo"></img>
+      <div class="cabecalho-principal">
+        <nav class="cabecalho-principal-nav" id="menuHeader">
+          <ul class="cabecalho-principal-nav-items">
+            <li class="cabecalho-principal-nav-items-li"><a id="home" href="#">HOME</a></li>
+            <li class="cabecalho-principal-nav-items-li"><a href="#">About me</a></li>
+            <li class="cabecalho-principal-nav-items-li"><a href="#">Projects</a></li>
+            <li class="cabecalho-principal-nav-items-li"><a id="contactMe" href="#">Contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="responsive-btn" id="responsiveBtn"></div>
+
+    </header>
+    <section class="section-intro">
+      <img src="../img/fotoIntro.png" width="150px" class="section-into-myphoto" alt="">
+      <h2 class="section-intro-h2">Arthur Costa</h2>
+      <h3 class="section-intro-h3">Um talvez criativo programador web</h3>
+      <p class="autor-img-fundo__header">-Brett Syles</p>
+      <p><i class="fa fa-solid fa-arrow-down-long icon-baixo"></i></p>
+    </section>
+
+  </div>
+
+  <main class=" container-main">
+
+    <section class="container section-about">
+      <div class="section-about-header">
+        <img class="section-about-img" src="../img/fotoDoLink.jpg" alt="">
+        <div class="container-about">
+          <div class="section-about-intro titulo">INTRO</div>
+          <h2 class="section-about-h2 titulo">About me</h2>
+          <p class="section-about-p">Hello world, meu nome é Arthur Linhares da Costa, tenho 19 anos e eu estudo
+            programação web, me considero alguem muito dedicado nos caminhos do Front-end (nada contra o back-end eu só
+            tenho um blokeio mental com banco de dados) e alem de crer que eu possa contribuir com minha humilde
+            experiencia na construção e desenvolvimento de varios projetos!!!</p>
+
+          <section class="infomation-personal">
+            <header class="infomation-personal-header">
+              <h3 class="infomation-personal-header-h3 titulo">Informações</h3>
+            </header>
+            <div class="infomation-personal-list">
+              <div class="infomation-personal-list-card">
+                <ul>
+                  <li><span class="information-personal-list-span">Name:</span> Arthur Costa</li>
+                  <li><span class="information-personal-list-span">Age:</span> 20</li>
+                  <li><span class="information-personal-list-span">Phone:</span> (16)99203-6976</li>
+                  <li><span class="information-personal-list-span">Experience:</span> nothing yet</li>
+                </ul>
+              </div>
+              <div class="infomation-personal-list-card">
+                <ul>
+                  <li><span class="information-personal-list-span">Linkedin:</span></li>
+                  <li><span class="information-personal-list-span">WhatsAPP:</span></li>
+                  <li><span class="information-personal-list-span">Técnico:</span></li>
+                </ul>
+              </div>
             </div>
-            <div class="responsive-btn" id="responsiveBtn"></div>
-            
-        </header>
-        <section class="section-intro">
-            <img src="../img/fotoIntro.png" width="150px" class="section-into-myphoto" alt="">
-            <h2 class="section-intro-h2">Arthur Costa</h2>
-            <h3 class="section-intro-h3">Um talvez criativo programador web</h3>
-            <p class="autor-img-fundo__header">-Brett Syles</p>
-            <p><i class="fa fa-solid fa-arrow-down-long icon-baixo"></i></p>
-        </section>
-        
+          </section>
+          <button class="infomation-personal-CV">Dowload CV</button>
+        </div>
+      </div>
+    </section>
+    <!--==============================modals-Card=================================-->
+    <div class="modal fade " id="modalFuturo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <section class="modal-dialog ">
+        <div class="modal-content modal-cards-about-me">
+          <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Futuro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </header>
+          <section class="modal-body ">
+            <p> Se voçe acha que eu sou aquele tipo de programador que paro ou fico estagnado em uma determinada "area"
+              ja pode esqueçer, eu estou lutando por um futuro melhor, tanto para min quanto para a minha carreira. <br>
+              Todo dia busco corrigir e melhorar meu desempenho, mesmo que eu fique "petrificado" em algums problemas
+              mas eu <strong>NUNCA</strong> deixo de aprender um pouco mais a cada dia que passa e assim garantir a tão
+              procurada confiança.</p>
+          </section>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </footer>
+        </div>
+      </section>
     </div>
 
-    <main class=" container-main">
+    <div class="modal fade " id="modalPersonal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <section class="modal-dialog ">
+        <div class="modal-content modal-cards-about-me">
+          <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Como Pessoa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </header>
+          <section class="modal-body ">
+            <p>
+              Reconheço que estou longe de ter um codigo super bem elaborado, mas a cada dia que passa busco sempre
+              melhorar um pouco mais como programador, é fato que todo mundo teve um começo e o meu está aqui, alias
+              acho que com o conhecimento basico e com a constante ideia de melhoria o unico limite é o céu.
+            </p>
+          </section>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </footer>
+        </div>
+      </section>
+    </div>
 
-        <section class="container section-about">
-            <div class="section-about-header">
-                <img class="section-about-img" src="../img/fotoDoLink.jpg" alt="">
-                <div class="container-about">
-                    <div class="section-about-intro titulo">INTRO</div>
-                    <h2 class="section-about-h2 titulo">About me</h2>
-                    <p class="section-about-p">Hello world, meu nome é Arthur Linhares da Costa, tenho 19 anos e eu estudo programação web, me considero alguem muito dedicado nos caminhos do Front-end (nada contra o back-end eu só tenho um blokeio mental com banco de dados) e alem de crer que eu possa contribuir com minha humilde experiencia na construção e desenvolvimento de varios projetos!!!</p>
+    <div class="modal fade " id="modalCriatividade" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <section class="modal-dialog ">
+        <div class="modal-content modal-cards-about-me">
+          <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Criatividade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </header>
+          <section class="modal-body ">
+            <p>
+              Como Programador Web eu sempre tento buscar meios ou modos de levar uma experiençia melhorada aos
+              usuarios, tanto no design quanto na performançe, sempre indo atras de codigos mais limpos, alem de layouts
+              mais amigaveis, faceis e elegantes para navegar, alem de dar valor ao constante processo de evolução da
+              web eu tento sempre escrever códigos mais legiveis para facilitar futuras manutenções e assim trazendo
+              mais versatilidade ao trabalho.
+            </p>
+          </section>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </footer>
+        </div>
+      </section>
+    </div>
 
-                    <section class="infomation-personal">
-                        <header class="infomation-personal-header">
-                            <h3 class="infomation-personal-header-h3 titulo">Informações</h3>
-                        </header>
-                        <div class="infomation-personal-list">
-                            <div class="infomation-personal-list-card">
-                                <ul>
-                                    <li><span class="information-personal-list-span">Name:</span> Arthur Costa</li>
-                                    <li><span class="information-personal-list-span">Age:</span> 20</li>
-                                    <li><span class="information-personal-list-span">Phone:</span> (16)99203-6976</li>
-                                    <li><span class="information-personal-list-span">Experience:</span> nothing yet</li>
-                                </ul>
-                            </div>
-                            <div class="infomation-personal-list-card">
-                                <ul>
-                                    <li ><span class="information-personal-list-span">Linkedin:</span></li>
-                                    <li><span class="information-personal-list-span">WhatsAPP:</span></li>
-                                    <li><span class="information-personal-list-span">Técnico:</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <button class="infomation-personal-CV">Dowload CV</button>
-                </div>
+    <div class="modal fade " id="modalResponsabilidade" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <section class="modal-dialog ">
+        <div class="modal-content modal-cards-about-me">
+          <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Criatividade</h5>
+            <button type="button" class="btn-close btn-close-modal__cards" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </header>
+          <section class="modal-body ">
+            <p>
+              Alem de tudo isso, eu entendo que existem outras pessoas que não usam a web da mesma forma, e não estou
+              falando apenas de pessoas que acessam de dispositivos mobile ou TVs gigantes, mas sim daquelas pessoas que
+              usam ferramentas que auxiliam na navegação da mesma, como alguem com dificuldade visual que usa uma
+              determinada ferramenta para ler um blog, com isso venho sempre a usar da melhor forma que eu conseguir as
+              tags semanticas disponiveis no HTML5, alem de sempre testar as cores e o constrastes que elas causam uma
+              na outra, sem conta na própria responsividade do site.
+            </p>
+          </section>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </footer>
+        </div>
+      </section>
+    </div>
+
+    <!--====================================CARDS ABOUT ME====================================-->
+
+
+    <section class="cards-work-global">
+      <header class="header-card-work">
+        <h1>Serviços</h1>
+        <h2>O que tenho a oferecer</h2>
+      </header>
+      <div class="cards">
+        <div class="cards-section-one">
+          <div class="cards-work">
+            <div class="content-card">
+              <i class="icons-card fa fa-regular fa-paper-plane"></i>
+              <h3 class="gradient-titlle">Futuro</h3>
+              <p>EVOLUÇÃO | PERSEVERANÇA | FOCO</p>
+              <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal" data-bs-target="#modalFuturo">
+                Leia Mais
+              </button>
             </div>
-        </section>
-<!--==============================modals-Card=================================-->
-<div class="modal fade " id="modalFuturo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <section class="modal-dialog ">
-      <div class="modal-content modal-cards-about-me">
-        <header class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Futuro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </header>
-        <section class="modal-body ">
-            <p> Se voçe acha que eu sou aquele tipo de programador que paro ou fico estagnado em uma determinada "area" ja pode esqueçer, eu estou lutando por um futuro melhor, tanto para min quanto para a minha carreira. <br>
-             Todo dia busco corrigir e melhorar meu desempenho, mesmo que eu fique "petrificado" em algums problemas mas eu <strong>NUNCA</strong> deixo de aprender um pouco mais a cada dia que passa e assim garantir a tão procurada confiança.</p>
-        </section>
-        <footer class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </footer>
+          </div>
+          <div class="cards-work">
+            <div class="content-card">
+              <i class="icons-card fa fa-solid fa-chart-line"></i>
+              <h3 class="gradient-titlle">Como pessoa</h3>
+              <p>APRENDIZADO | MELHORIA | CONHECIMENTO </p>
+              <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal" data-bs-target="#modalPersonal">
+                Leia Mais
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cards-section-two">
+          <div class="cards-work">
+            <div class="content-card">
+              <p><i class="icons-card fa fa fa-solid fa-brain"></i></p>
+              <h3 class="gradient-titlle">Criatividade</h3>
+              <p>DESIGN | PERFORMANCE | VERSATILIDADE</p>
+              <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal"
+                data-bs-target="#modalCriatividade">
+                Leia Mais
+              </button>
+            </div>
+          </div>
+          <div class="cards-work">
+            <div class="content-card">
+              <p><i class="icons-card fa fa-solid fa-users"></i></p>
+              <h3 class="gradient-titlle">Responsabilidade</h3>
+              <p>SEMANTICA | RESPONSIVIDADE | WEB PARA TODOS</p>
+              <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal"
+                data-bs-target="#modalResponsabilidade">
+                Leia Mais
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  </div>
 
-  <div class="modal fade " id="modalPersonal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <section class="modal-dialog ">
-      <div class="modal-content modal-cards-about-me">
-        <header class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Como Pessoa</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </header>
-        <section class="modal-body ">
-            <p>
-                Reconheço que estou longe de ter um codigo super bem elaborado, mas a cada dia que passa busco sempre melhorar um pouco mais como programador, é fato que todo mundo teve um começo e o meu está aqui, alias acho que com o conhecimento basico e com a constante ideia de melhoria o unico limite é o céu.
-            </p>
-        </section>
-        <footer class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </footer>
+    <section class="container projects-global">
+      <header class="projects-header">
+        <h2>Meus Projetos</h2>
+      </header>
+      <div class="section-projects">
+        <div class="content-projects">
+          <h2>Sobre eles</h2>
+          <h3>SEXO</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates laboriosam molestiae culpa facilis illo iste eveniet, doloremque animi nulla nisi, ratione dolor a velit. Similique minus veniam est expedita.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam est suscipit cupiditate tenetur mollitia quia quidem nesciunt fugit voluptatum fugiat doloremque, ab quae corporis expedita odio, sapiente facere explicabo.</p>
+        </div>
+        <div class="slider-projects">
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <input type="radio" name="radio-btn" id="radio5">
+              <picture class="slide first img-slide">
+                <img src="../img/gato1.jpeg" alt="">
+              </picture>
+              <picture class="slide img-slide">
+                <img src="../img/gato2.jpeg" alt="">
+              </picture>
+              <picture class="slide img-slide">
+                <img src="../img/gato3.jpeg" alt="">
+              </picture>
+              <picture class="slide img-slide">
+                <img src="../img/gato4.jpeg" alt="">
+              </picture>
+              <picture class="slide img-slide">
+                <img src="../img/gato5.jpeg" alt="">
+              </picture>
+              <nav class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+              </nav>
+            </div>
+            <div class="nav-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  </div>
+  </main>
 
-  <div class="modal fade " id="modalCriatividade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <section class="modal-dialog ">
-      <div class="modal-content modal-cards-about-me">
-        <header class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Criatividade</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </header>
-        <section class="modal-body ">
-            <p>
-                Como Programador Web eu sempre tento buscar meios ou modos de levar uma experiençia melhorada aos usuarios, tanto no design quanto na performançe, sempre indo atras de codigos mais limpos, alem de layouts mais amigaveis, faceis e elegantes para navegar, alem de dar valor ao constante processo de evolução da web eu tento sempre escrever códigos mais legiveis para facilitar futuras manutenções e assim trazendo mais versatilidade ao trabalho.
-            </p>
-        </section>
-        <footer class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </footer>
-      </div>
-    </section>
-  </div>
-
-  <div class="modal fade " id="modalResponsabilidade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <section class="modal-dialog ">
-      <div class="modal-content modal-cards-about-me">
-        <header class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Criatividade</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </header>
-        <section class="modal-body ">
-            <p>
-                Alem de tudo isso, eu entendo que existem outras pessoas que não usam a web da mesma forma, e não estou falando apenas de pessoas que acessam de dispositivos mobile ou TVs gigantes, mas sim daquelas pessoas que usam ferramentas que auxiliam na navegação da mesma, como alguem com dificuldade visual que usa uma determinada ferramenta para ler um blog, com isso venho sempre a usar da melhor forma que eu conseguir as tags semanticas disponiveis no HTML5, alem de sempre testar as cores e o constrastes que elas causam uma na outra, sem conta na própria responsividade do site.
-            </p>
-        </section>
-        <footer class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </footer>
-      </div>
-    </section>
-  </div>
-
-  <!--====================================CARDS ABOUT ME====================================-->
-
-        
-            <section class="cards-work-global">
-                <header class="header-card-work">
-                    <h1>Serviços</h1>
-                    <h2>O que tenho a oferecer</h2>
-                </header>
-                    <div class="cards">
-                        <div class="cards-section-one">
-                            <div class="cards-work">
-                                <div class="content-card">
-                                    <i class="icons-card fa fa-regular fa-paper-plane"></i>
-                                    <h3 class="gradient-titlle">Futuro</h3>
-                                    <p>EVOLUÇÃO | PERSEVERANÇA | FOCO</p>
-                                    <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal" data-bs-target="#modalFuturo">
-                                        Leia Mais
-                                      </button>
-                                </div>
-                            </div>
-                            <div class="cards-work">
-                                <div class="content-card">
-                                    <i class="icons-card fa fa-solid fa-chart-line"></i>
-                                    <h3 class="gradient-titlle">Como pessoa</h3>
-                                    <p>APRENDIZADO | MELHORIA | CONHECIMENTO </p>
-                                    <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal" data-bs-target="#modalPersonal">
-                                        Leia Mais
-                                      </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards-section-two">
-                            <div class="cards-work">
-                                <div class="content-card">
-                                    <p><i class="icons-card fa fa fa-solid fa-brain"></i></p>
-                                    <h3 class="gradient-titlle">Criatividade</h3>
-                                    <p>DESIGN | PERFORMANCE | VERSATILIDADE</p>
-                                    <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal" data-bs-target="#modalCriatividade">
-                                        Leia Mais
-                                      </button>
-                                </div>
-                            </div>
-                            <div class="cards-work">
-                                <div class="content-card">
-                                    <p><i class="icons-card fa fa-solid fa-users"></i></p>
-                                    <h3 class="gradient-titlle">Responsabilidade</h3>
-                                    <p>SEMANTICA | RESPONSIVIDADE | WEB PARA TODOS</p>
-                                    <button type="button" class="btn btn-modal-cards" data-bs-toggle="modal" data-bs-target="#modalResponsabilidade">
-                                        Leia Mais
-                                      </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-    </main>
-    
 </body>
+
 </html>
