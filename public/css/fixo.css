@@ -460,8 +460,8 @@ a, li{
 /*=====================================RESPONSIVIDADE======================*/
 @media screen and (max-width:800px) {
     .nav-manual{
-        width: 21rem;
-        margin-top: 1rem;
+        width: 24rem;
+        margin-top: 2rem;
     }
     .slides {
         width: 30rem;
@@ -545,6 +545,9 @@ a, li{
 @media screen and (max-width: 1002px){
     .section-about-header{
         flex-wrap: wrap-reverse;
+    }
+    .container-about {
+        margin-left: 0;
     }
     .section-projects {
         align-items: center;
