@@ -29,6 +29,8 @@ AGORA VOCE JA PODE DESFRUTA DA MINHA TALVEZ OBRA, OBRIGADO
 ## SEÇÃO SPOILER
 Para aqueles que não tão afim de clona e fazer o blablabla vou divulgar o resumo aqui a baixo
 
+OBS: vc pode ter percebido que eu não separei o CSS mas isso tem um motivo, eu fiz isso pra voçe perceber que meu intuito foi deixar o codigo legivel a qualquer um independente do tamanho, cada classe ali da pra saber o que ela ta mudando pelo nome...eu acho
+
 ### Header
 
 ![HEADER](https://user-images.githubusercontent.com/95101382/168497074-10895e01-2815-4b12-b0bd-4011776be96a.png)
