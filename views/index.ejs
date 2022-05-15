@@ -2,49 +2,15 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/c9e4967131.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/fixo.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
-    defer></script>
-  <script src="../js/fixo.js" defer></script>
-  <link rel="stylesheet" href="../css/index.css">
+  <%- include('./partials/head.ejs') %> 
+
   <title>Arthur portfolio's</title>
 </head>
 
 <body>
-  <div class="header">
-    <img src="../img/fundoMontain.jpg" class="header-img" alt="">
-    <header class="cabecalho-global">
-      <img src="../img/logo.png" class="cabecalho-logotipo"></img>
-      <div class="cabecalho-principal">
-        <nav class="cabecalho-principal-nav" id="menuHeader">
-          <ul class="cabecalho-principal-nav-items">
-            <li class="cabecalho-principal-nav-items-li"><a id="home" href="#">HOME</a></li>
-            <li class="cabecalho-principal-nav-items-li"><a href="#">About me</a></li>
-            <li class="cabecalho-principal-nav-items-li"><a href="#">Projects</a></li>
-            <li class="cabecalho-principal-nav-items-li"><a id="contactMe" href="#">Contact me</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="responsive-btn" id="responsiveBtn"></div>
 
-    </header>
-    <section class="section-intro">
-      <img src="../img/fotoIntro.png" width="150px" class="section-into-myphoto" alt="">
-      <h2 class="section-intro-h2">Arthur Costa</h2>
-      <h3 class="section-intro-h3">Um talvez criativo programador web</h3>
-      <p class="autor-img-fundo__header">-Brett Syles</p>
-      <p><i class="fa fa-solid fa-arrow-down-long icon-baixo"></i></p>
-    </section>
-
-  </div>
+  <%- include('./partials/header.ejs') %>
 
   <main class=" container-main">
 
@@ -54,7 +20,7 @@
         <div class="container-about">
           <div class="section-about-intro titulo">INTRO</div>
           <h2 class="section-about-h2 titulo">About me</h2>
-          <p class="section-about-p">Hello world, meu nome é Arthur Linhares da Costa, tenho 19 anos e eu estudo
+          <p class="section-about-p">Hello world, meu nome é Arthur Linhares da Costa, tenho 20 anos e eu estudo
             programação web, me considero alguem muito dedicado nos caminhos do Front-end (nada contra o back-end eu só
             tenho um blokeio mental com banco de dados) e alem de crer que eu possa contribuir com minha humilde
             experiencia na construção e desenvolvimento de varios projetos!!!</p>
@@ -68,15 +34,15 @@
                 <ul>
                   <li><span class="information-personal-list-span">Name:</span> Arthur Costa</li>
                   <li><span class="information-personal-list-span">Age:</span> 20</li>
-                  <li><span class="information-personal-list-span">Phone:</span> (16)99203-6976</li>
+                  <li><span class="information-personal-list-span">Nivel:</span> Estágio</li>
                   <li><span class="information-personal-list-span">Experience:</span> nothing yet</li>
                 </ul>
               </div>
               <div class="infomation-personal-list-card">
                 <ul>
-                  <li><span class="information-personal-list-span">Linkedin:</span></li>
-                  <li><span class="information-personal-list-span">WhatsAPP:</span></li>
-                  <li><span class="information-personal-list-span">Técnico:</span></li>
+                  <li><span class="information-personal-list-span">Adress:</span> São Carlos/SP</li>
+                  <li><span class="information-personal-list-span">WhatsAPP:</span> (16)99203-6976</li>
+                  <li><span class="information-personal-list-span">Técnico:</span> SENAC - Programador Web</li>
                 </ul>
               </div>
             </div>
@@ -183,8 +149,8 @@
 
     <section class="cards-work-global">
       <header class="header-card-work">
-        <h1>Serviços</h1>
-        <h2>O que tenho a oferecer</h2>
+        <h2 class="subtittle-p">O que tenho a oferecer</h2>
+        <h2 class="subtittle-h2">Serviços</h2>
       </header>
       <div class="cards">
         <div class="cards-section-one">
@@ -242,10 +208,14 @@
       </header>
       <div class="section-projects">
         <div class="content-projects">
-          <h2>Sobre eles</h2>
-          <h3>SEXO</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates laboriosam molestiae culpa facilis illo iste eveniet, doloremque animi nulla nisi, ratione dolor a velit. Similique minus veniam est expedita.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam est suscipit cupiditate tenetur mollitia quia quidem nesciunt fugit voluptatum fugiat doloremque, ab quae corporis expedita odio, sapiente facere explicabo.</p>
+          <p class="subtittle-p">Há muito do que se orgulhar ainda</p>
+          <h2 class="subtittle-h2">Sobre os Projetos</h2>
+          
+          <div class="section-projects-parags">
+            <p>Como ja dito não tenho muitos projetos próprios com ideias que vão alem de <strong>calculadora</strong> e <strong>IMC</strong> mas com toda certeza vou buscar trabalhar muito mais em projetos que tragam um <strong>diferencial</strong> para a nossa sociedade.</p>
+            <p>A prova está aqui e tirando o fato que eu só começei a da um valor mais serio pro GitHub agora, eu ja tenho alguns conhecimentos basicos em <strong>CRUD</strong>, <strong>BD(MySQL)</strong>, <strong>node.js</strong>, <strong>FrameWorks</strong> como o bootstrap e etc...</p>
+            <p>Enquanto não ha projetos de extrema importancia <strong>(ALEM DO MEU TCC NO SENAC QUE ESTÁ MUITO LINDO E FOI FEITO COM MUITO EMPENHO E CARINHO <a href="https://github.com/ArthurCost4/Projeto-Integrador-SENAC22" target="_blank" rel="nofollow">CLIQUE AQUI E VEJA</a> )</strong> para apresentar aqui, enquanto isso desfrute desse lindo Slider com fotos da minha <strong>gata</strong>...</p>
+          </div>
         </div>
         <div class="slider-projects">
           <div class="slider">
@@ -290,6 +260,8 @@
       </div>
     </section>
   </main>
+
+  <%- include('./partials/footer.ejs') %>
 
 </body>
 

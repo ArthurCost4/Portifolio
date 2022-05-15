@@ -62,7 +62,10 @@ a, li{
     margin-bottom: 7px;
 }
 /*====================Header=================*/
-
+.my-job-developer{
+    font-weight: bold;
+    color: var(--corSecund);
+}
 .header-img{
     position: absolute;
     top: 0;
@@ -261,9 +264,46 @@ a, li{
 }
 
 /*=====================================content projects======================*/
+.projects-global p{
+    font-family: var(--fontText);
+}
+.subtittle-p{
+    font-family: var(--fontTitulo);
+    font-size: var(--normal-font-size);
+    color: var(--corSecund);
+}
+.subtittle-h2::after{
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 5rem;
+    border-bottom: 2px var(--corSecund) solid;
+    margin-top: var(--mb-0-5);
+}
+.section-projects-parags{
+    width: auto;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px var(--corSecund) solid;
+}
+.section-projects-parags p{
+    line-height: 1.7rem;
+}
 .projects-header{
     margin: 3rem 0;
     text-align: center;
+    font-family: var(--fontTitulo);
+}
+.projects-header::after{
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 7rem;
+    margin: auto;
+    border-bottom: 3px var(--corSecund) solid;
 }
 .section-projects{
     display: flex;
@@ -278,6 +318,7 @@ a, li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem;
 }
 .slider{
     width: 23rem;
@@ -339,7 +380,83 @@ a, li{
     margin-left: -395%;
 }
 
+.nav-auto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 24rem;
+    margin-top: 33rem;
+}
+.nav-auto div{
+    border: 2px solid var(--cor2);
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 35px;
+}
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: var(--cor2);
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: var(--cor2);
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: var(--cor2);
+}
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: var(--cor2);
+}
+#radio5:checked ~ .nav-auto .auto-btn5{
+    background-color: var(--cor2);
+}
+/*=====================================Footer site======================*/
 
+.footer-site{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    background-color: #272626;
+    font-family: var(--fontText);
+}
+.footer-site-logo{
+    margin-top: var(--mb-1-5);
+    pad: 1rem;
+}
+.footer-site-logo img{
+    width: 200px;
+}
+.footer-site-nav-item .fa{
+    font-size: 1.65rem;
+    color: white;
+    transition: .5s;
+}
+.footer-site-nav-item:hover .fa{
+    color: rgb(156, 154, 154);
+    padding:0 1rem;
+}
+.footer-site-nav-item:not(:last-child){
+    margin-right: var(--mb-1-0);
+}
+.footer-site-agradecimento{
+    padding: .8rem;
+    text-align: center;
+}
+.footer-site-agradecimento-end{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+}
+.footer-site-agradecimento-end .fa{
+    margin-left: var(--mb-1-0);
+    color: rgb(209, 28, 28);
+}
 /*=====================================RESPONSIVIDADE======================*/
 @media screen and (max-width:800px) {
     .nav-manual{
