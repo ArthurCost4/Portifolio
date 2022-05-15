@@ -1,4 +1,4 @@
-# Portifolio
+# Portfolio
  
 Olá, Bem vindos, vou apenas apresentar a intro do projeto e como iniciar o mesmo, espero que gostem 
 
